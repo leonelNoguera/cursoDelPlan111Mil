@@ -1,0 +1,43 @@
+Cliente
+	nombre
+	pedido
+
+Pizza
+	tamanio
+	variedad
+	ingredientes
+	precio
+	tipo
+
+Menu
+	variedad
+	nombre
+	ingredientes
+	precio
+	tamanio
+	tipo
+
+Mostrador
+	Pedido
+
+Pedido
+	nombreDelCliente
+	cantidadDePizzas
+	tamanio
+	variedad
+	fechaDelPedido
+	horaDeEntrega
+	demoraEstimada
+
+Factura
+	Pedido
+
+Variedad
+	nombre
+	listaDeIngredientes
+	Tipo
+
+Estadisticas
+	listaDeLosMasPedidos
+	ingresos
+	cantidadMontoDePedidos

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SistemaFacturacion">
+  <ClassDiagramComponents>
+    <Class name="Comprobante" package="" visibility="public" xPosition="239.0" yPosition="15.0">
+      <Fields>
+        <Field name="fecha" type="Date" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+        <Field name="numeroIdentificador" type="int" visibility="private"/>
+        <Field name="importeTotal" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Comprobante" returnType="void" visibility="public"/>
+        <Method name="Comprobante" returnType="void" visibility="public">
+          <Argument type="Date" name="fecha"/>
+          <Argument type="String" name="tipo"/>
+          <Argument type="int" name="numeroIdentificador"/>
+          <Argument type="double" name="importeTotal"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="458.0" yPosition="222.0">
+      <Fields>
+        <Field name="cuitCuil" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Cliente" returnType="void" visibility="public"/>
+        <Method name="Cliente" returnType="void" visibility="public">
+          <Argument type="int" name="cuil"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Factura" package="" visibility="public" xPosition="148.0" yPosition="436.0">
+      <Fields>
+        <Field name="productos" type="ArrayList&lt;Producto&gt;" visibility="private"/>
+        <Field name="clientes" type="ArrayList&lt;Cliente&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Factura" returnType="void" visibility="public"/>
+        <Method name="Factura" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Producto&gt;" name="productos"/>
+          <Argument type="ArrayList&lt;Cliente&gt;" name="clientes"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="" visibility="public" xPosition="24.0" yPosition="222.0">
+      <Fields>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Producto" returnType="void" visibility="public"/>
+        <Method name="Producto" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+          <Argument type="int" name="codigo"/>
+          <Argument type="double" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="FielName2" source="Factura" target="Cliente" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Factura" target="Comprobante"/>
+    <HasRelation name="FieldName1" source="Factura" target="Producto" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

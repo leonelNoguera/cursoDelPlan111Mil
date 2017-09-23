@@ -1,0 +1,50 @@
+-----------------------------------
+10/06/2017
+----------
+nota:
+- 4 tipos de Empleados:
+	- asalariados - A
+		- salario semanal fijo
+
+	- por hora - B
+		- sueldo por hora
+		- pago por tiempo extra (1,5 veces mas que las horas comunes), esto es si se exeden las 40 horas semanales
+
+	- por comisión - C
+		- porcentaje de sus ventas
+
+	- asalariados por comisión - D
+		- salario base mas un porcentaje de sus ventas
+		- recompensa: incremento de un 10% del salario base
+
+- cosas en comun:
+	- reciben pagos semanalmente
+
+- A y D:
+	- salario base
+
+- C y D:
+	- porcentaje de ventas
+----------
+24/06/2017
+----------
+nota:
+- aprendiendo herencia y polimorfismo con un programa de empleados
+- a EmpleadoAsalariado se le suma un 20%
+code:
+----
+for(Empleado empleadoActual:empleado)
+{
+	System.out.printf....
+	if(empleadoActual instanceOf EmpleadoAsalariado)
+	{
+		Empleado emplado = (EmpleadoAsalariado) empleadoActual;
+		empleado.setSueldoBase(empleado.getSuedoBase()*1.2);
+	}
+}
+// otra forma de saber la clase
+for(int x=0;x<empleados.lenght;x++)
+{
+	System.out.printf("Elememento %d es un: %s\n",x+1,empleado[x].getClass().getName());
+}
+-----------------------------------

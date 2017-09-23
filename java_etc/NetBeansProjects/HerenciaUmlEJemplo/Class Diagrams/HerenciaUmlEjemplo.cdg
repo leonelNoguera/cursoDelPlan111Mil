@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HerenciaUmlEjemplo">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="39.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="getDni" returnType="int" visibility="public"/>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public"/>
+        <Method name="Persona" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="dni"/>
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="Persona" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Profesor" package="" visibility="public" xPosition="49.0" yPosition="397.0">
+      <Fields>
+        <Field name="cargo" type="String" visibility="private"/>
+        <Field name="materia" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCargo" returnType="String" visibility="public"/>
+        <Method name="getMateria" returnType="String" visibility="public"/>
+        <Method name="setCargo" returnType="void" visibility="public"/>
+        <Method name="setMateria" returnType="void" visibility="public"/>
+        <Method name="Profesor" returnType="void" visibility="public">
+          <Argument type="String" name="cargo"/>
+          <Argument type="String" name="materia"/>
+        </Method>
+        <Method name="Profesor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Alumno" package="" visibility="public" xPosition="396.0" yPosition="291.0">
+      <Fields>
+        <Field name="curso" type="String" visibility="private"/>
+        <Field name="materiasInscriptas" type="String" visibility="private"/>
+        <Field name="materiasAprobadas" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCurso" returnType="String" visibility="public"/>
+        <Method name="getMateriasInscriptas" returnType="String" visibility="public"/>
+        <Method name="getMateriasAprobadas" returnType="String" visibility="public"/>
+        <Method name="setCurso" returnType="void" visibility="public"/>
+        <Method name="setMateriasAprobadas" returnType="void" visibility="public"/>
+        <Method name="setMateriasInscriptas" returnType="void" visibility="public"/>
+        <Method name="Alumno" returnType="void" visibility="public">
+          <Argument type="String" name="curso"/>
+          <Argument type="String" name="materiasInscriptas"/>
+          <Argument type="String" name="materiasAprobadas"/>
+        </Method>
+        <Method name="Alumno" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Alumno" target="Persona"/>
+    <IsRelation name="is" source="Profesor" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

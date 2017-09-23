@@ -1,0 +1,105 @@
+1)_
+	Las aplicaciones Javav comienzan con el método main:
+	"public static void main(String[]args){}"
+2)_
+	La extensión de un archivo fuente de Java es ".java".
+3)_
+	El código producido tras la compilación se llama bytecode, tiene la extensión ".class".
+4)_
+	La máquina virtual Java es un programa que interpreta y ejecuta los archivos compilados, los bytecode.
+5)_
+	Los métodos que muestran información en la línea de comandos son:
+		- System.out.print("");
+		- System.out.println("");
+		- System.out.printf("");
+7)_
+	Los métodos son porciones de código que se ejecutan cuando son llamadados desde otra porción de código. Estos pueden devolver algún valor o no, pueden recibir valores o no.
+	Tienen una firma entre "()" que indica que valores va a recibir, se abren y cierran con "{}" y se debe indicar que tipo de dato devuelven(void si no devuelve nada):
+	"public int sumar(int n1, int n2)
+	{
+		return n1 + n2;
+	}"
+8)_
+	Los atributos son variables globales de las clases, son globales porque no están declaradas dentro de un método. Tienen modificador de acceso(public, private), tipos(String, int, etc.) y se le pueden asignar valores:
+	"private int numero = 2;"
+9)_
+	El encapsulamiento es la técnica de "encapsular" métodos y atributos en sus clases de manera que no se acceda de cualquier lugar y forma sino que se accede de una manera más controlada.
+
+10)_
+	Las interfaces son clases abstractas con métodos abstractos y constantes abstractas. Esos métodos están vacíos y es necesario implementar y desarrollar(si fuere necesario) estos métodos en las clases que las implementen.
+
+11)_
+	Los setter's son métodos públicos que se usan en las clases que manejan atributos privados, estos métodos permiten la asignación de los datos a los atributos de manera más controlada.
+
+12)_
+	Los getter's son métodos públicos que se usan en las clases que manejan atributos privados, estos métodos permiten la obtención de los datos de los atributos de manera más controlada.
+16)_
+	El post-incremento es cuando se le suma una unidad a una variable numérica pero el valor de esta variable no cambia hasta terminar la instrucción:
+	"int d = 0;
+	d++; // d tiene valor 0 en esta instrucción
+	f = d // f vale 1"
+
+	El pre-incremento es cuando se le suma una unidad a una variable numérica y el valor de esta variable cambia en la misma instrucción:
+	"int d = 0;
+	++d; // d tiene valor 1 en esta instrucción"
+20)_
+	a)_ El error no es un error de compilación sino de lógica. al poner "if(c<7);" éste pregunta por el valor pero termina en esa misma línea. La siguiente línea se ejecuta independientemente del "if".
+	b)_ Está mal escrito porque "c=>7" da error de compilación. Lo correcto sería "c>=7".
+21)_
+	Debe tener el modificador "public" porque sino no habría forma de acceder a ésta.
+22)_
+	Un paquete es un "contenedor" de clases y otros paquetes con el cual, al importarlo, se pueden usar esas clases con sus respectivos métodos.
+34)_
+	"Float" es un tipo de variable flotante con una determinada cantidad máxima de decimales y "Double" es lo mismo solo que tiene el "doble" de precisión(de allí su nombre).
+35)_
+	Se puede ingresar por la consola, con la clase "Scanner" y su método "nextInt":
+		"Scanner entrada = new Scanner(System.in);
+		int x = entrada.nextInt(); // el programa espera hasta que se ingrese un dato y se precione enter para continuar"
+	Se puede ingresar por la consola, pasándolo como parámetro al ejecutar la clase:
+		"public static void main(String[]args)
+		{
+			int x = args[0]; // al ingresar un dato ($ java Application 4) se le asignará a la variable x
+		}"
+	Se puede ingresar utilizando un campo de texto de una GUI.
+37 y 38)_
+	La firma de un método es la definición de los parámetros que recibe y su tipo(esta se define entre paréntesis) así como el tipo de dato que devuelve.
+	"public int sumar(int n1, int n2, int n3){}"
+39)_
+	El método es "nextLine()" y devuelve un valor tipo "String".
+40)_
+	Se encuentra en "java.lang".
+43)_
+	Los nombres de métodos y atributos se escriben con notación camélida simple, es decir que comienzan siempre con minúscula y cuando se pone otra palabra ésta comienza en mayúscula. Nunca hay espacios o caracteres especiales en los nombres:
+		"public int sumarNumeros(int numeroUno, int numeroDos)
+		{
+			return numeroUno + numeroDos;
+		}"
+44)_
+	La declaración "import" sirve para importar clases de determinados paquetes. Al importar se pueden usar las clases con sus respectivos métodos.
+45)_
+	No puede invocar un método por sí mima, pero si al asignarle un valor.
+46)_
+	Las variables locales son aquellas que están declaradas en un determinado método y no pueden ser utilizadas fuera si no es pasándolas por métodos.
+	Las variables de instancia son aquellas que están asignadas de una determinada clase:
+		"Tiempo miVariable = new Tiempo();"
+47)_
+	El propósito de un parámetro en un método es recibir un valor en el método para su disponibilidad y uso en el mismo.
+48)_
+	Un parámetro es un valor en la declaración del método que sirve para su disponibilidad y uso en el mismo al llamar al método desde otra porción de código, cuando se llama al método se envía el argumento entre paréntesis.
+51)_
+	La reutilización de código es la práctica de utilizar la misma porción de código en distintas partes de programa.
+54)_
+	Se encuentra en "EvaluacionJava_20170715/Ejercicio54.java".
+55)_
+	El valor de desplazamiento es el número que se le suma al Random, generalmente para evitar valores inferiores a 1.
+	El factor de escala es el número que va entre paréntesis como argumento del método que se utilice de la clase Random, éste define el valor hasta el cual podría llegar el número aleatorio.
+	La diferencia entre valores es que cada vez que se llama al método "nextInt" retorna un valor diferente.
+		"Random enterosAleatorios = new Random();
+		numeroR = 1 + enterosAleatorios.nextInt(6);"
+60)_
+	La sobrecarga de métodos es la técnica de utilizar métodos de igual nombre con distintas firmas en cuanto a los parámetros:
+	Se sobrecarga declarando métodos de mismo nombre y distinta firma. Las ventajas son que se puede llamar a el mismo método con distinta cantidad y tipos de argumentos según sea necesario, esto ahorra definir métodos de ditinto nombre para las muchas o infinitas posibilidades que haya, ahorra código.
+)_
+	
+94)_
+	No se puede instanciar una clase abstracta.

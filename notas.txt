@@ -1,0 +1,27 @@
+tecnicas de programacion 120
+
+db(Mysql) 80
+
+POO 150
+
+legislacion y orientacion laboral 24
+
+
+123 --
+132 --
+231 --
+213 --
+321 --
+312 --
+
+
+Diagrama de clases(UML) --> modelo de análisis y modelo de diseño
+
+------------	---------
+PruebaClases	Alumnos
+------------	---------
+atributos   --->atributos
+------------	---------
+metodos		metodos
+------------	---------
+

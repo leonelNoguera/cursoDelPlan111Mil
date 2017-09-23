@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UmlPizzeria">
+  <ClassDiagramComponents>
+    <Class name="Pizza" package="" visibility="public" xPosition="419.0" yPosition="109.0">
+      <Fields>
+        <Field name="tamanio" type="Tamanio" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="226.0" yPosition="241.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="pedido" type="Pedido" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Factura" package="" visibility="public" xPosition="544.0" yPosition="265.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Menu" package="" visibility="public" xPosition="263.0" yPosition="399.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Estadisticas" package="" visibility="public" xPosition="547.0" yPosition="386.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Mostrador" package="" visibility="public" xPosition="199.0" yPosition="122.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pedido" package="" visibility="public" xPosition="68.0" yPosition="344.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Tipo" package="" visibility="public" xPosition="645.0" yPosition="121.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Variedad" package="" visibility="public" xPosition="51.0" yPosition="224.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Enum name="Tamanio" package="" visibility="public" xPosition="719.0" yPosition="234.0">
+      <Literals>
+        <Literal name="8"/>
+        <Literal name="10"/>
+        <Literal name="12"/>
+      </Literals>
+    </Enum>
+    <Class name="Ingrediente" package="" visibility="public" xPosition="496.0" yPosition="500.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
